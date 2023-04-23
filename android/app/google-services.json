@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "583257754290",
+    "project_id": "weather-and-disaster",
+    "storage_bucket": "weather-and-disaster.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:583257754290:android:6818389a0ba202219b97ab",
+        "android_client_info": {
+          "package_name": "com.example.climate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "583257754290-dt1v5uaievf7jai67limakgep4qaaemf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfVzED5u7k1rzD1exx7MiHR56hkwqv3Hw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "583257754290-dt1v5uaievf7jai67limakgep4qaaemf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
