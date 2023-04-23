@@ -22,7 +22,7 @@ class Homecontroller extends GetxController {
 
   Future<Location> fetchlocation() async {
     final response = await http.get(Uri.parse(
-        'http://api.openweathermap.org/geo/1.0/direct?q=$location&limit=1&appid=77734e006ba0211d1b75919b52eb65f5'));
+        'http://api.openweathermap.org/geo/1.0/direct?q=$location&limit=1&appid={app-id}'));
     if (response.statusCode == 200) {
       return (Location.fromJson(jsonDecode(response.body)));
     } else {
@@ -34,7 +34,7 @@ class Homecontroller extends GetxController {
     loading.value = true;
     Location latlog = await fetchlocation();
     final response = await http.get(Uri.parse(
-        'https://api.openweathermap.org/data/2.5/weather?lat=${latlog.lat}&lon=${latlog.log}&appid=77734e006ba0211d1b75919b52eb65f5'));
+        'https://api.openweathermap.org/data/2.5/weather?lat=${latlog.lat}&lon=${latlog.log}&appid={app-id}'));
     if (response.statusCode == 200) {
       obj.value = Weather.fromJson(jsonDecode(response.body)).temp;
       season.value = Weather.fromJson(jsonDecode(response.body)).season;
